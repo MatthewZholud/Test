@@ -13,11 +13,11 @@ type Product interface {
 	doStuff()
 }
 
-func getProduct(gunType string) (Product, error) {
-	if gunType == "Nike" {
+func getProduct(shoeBrand string) (Product, error) {
+	if shoeBrand == "Nike" {
 		return newNike(), nil
 	}
-	if gunType == "Adidas" {
+	if shoeBrand == "Adidas" {
 		return newAdidas(), nil
 	}
 	return nil, fmt.Errorf("wrong shoe type passed")
