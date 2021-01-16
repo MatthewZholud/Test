@@ -31,8 +31,8 @@ func (n Nike) doStuff()  {
 	fmt.Println("hello from", n.name)
 }
 
-func newNike() Product {
-	return &Nike{
+func newNike() Nike {
+	return Nike{
 		shoe: shoe{
 			name:  "Nike",
 		},
@@ -47,8 +47,8 @@ func (a Adidas) doStuff()  {
 	fmt.Println("hello from", a.name)
 }
 
-func newAdidas() Product {
-	return &Adidas{
+func newAdidas() Adidas {
+	return Adidas{
 		shoe: shoe{
 			name:  "Adidas",
 		},
